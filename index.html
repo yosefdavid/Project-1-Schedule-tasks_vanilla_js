@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>project 1</title>
+</head>
+
+
+<body>
+
+    <div class="container-fluid">
+
+        <form name="add_notse">
+
+            <div class="row">
+
+                <div class="col">
+                    <h1 id="title_page" class="title_page">My Task Board</h1>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col col_total_notse">
+                    <span id="total_notse" class="total_notse"></span>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col">
+                    <textarea name="new_not_textarea" class="new_not_textarea" placeholder="Your's note..."></textarea>
+                </div>
+
+            </div>
+
+            <div class="row div_row_inputs">
+
+                <div class="col div_inputs">
+                    <label class="labal_inputs">Date:</label>
+                    <input type="date" name="date_input" class="date_input">
+                    <label class="labal_inputs">Time:</label>
+                    <input type="time" name="time_input" class="time_input">
+                </div>
+
+            </div>
+
+            <div class="row">
+                
+                <div id="div_save_and_cancel" class="col div_save_and_cancel">
+
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col">
+                    <button type="button" onclick="add_note()" class="buttons btn btn-success">Add a note</button>
+                    <button type="button" onclick="clear_note()" class="buttons btn btn-warning">Clear</button>
+                    <button type="button" onclick="clear_all()" class="buttons btn btn-info">Clear all</button>
+                </div>
+
+            </div>
+
+            <div class="row eror_msg">
+
+                <div class="col">
+                    <span id="eror_msg"></span>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col">
+                    <span id="arr_notes_span" class="row"></span>
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>

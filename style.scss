@@ -1,0 +1,250 @@
+
+body {
+        background: url('background.png') fixed;
+        background-size: cover;
+
+        /* width */
+        ::-webkit-scrollbar {
+            width: 11px;
+        }
+        
+        /* Track */
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey; 
+            border-radius: 10px;
+        }
+        
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: red; 
+            border-radius: 10px;
+        }
+        
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #b30000; 
+        }
+
+    .container-fluid {
+        text-align: center;
+        margin-top: 52px;
+
+        .title_page {
+            color:mediumblue;
+            font-family: cursive;
+            text-decoration: underline;
+        }
+
+        .col_total_notse {
+
+            margin-top: 11px;
+            margin-bottom: -20px;
+
+        .total_notse {
+                    font-weight: bold;
+                    border-radius: 14px;
+                    padding: 5px;
+                    background-color: khaki;
+                }
+
+        }
+       
+
+        .new_not_textarea {
+            background-image: url('background_textarea.png');
+            background-size: 521px;
+            font-size: 22px;
+            width: 50%;
+            height: 141px;
+            margin-top: 30px;
+            border-top: 8px solid rgb(70, 33, 33);
+            border-left: 8px solid rgb(70, 33, 33);
+            border-right: 8px solid rgb(70, 33, 33);
+            border-bottom: none;
+            opacity: 0.9;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            outline: none;
+            color: rgb(24, 7, 179);
+        }
+
+        .div_row_inputs {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+           
+            .div_inputs {
+                background-image: url('background_textarea.png');
+                background-size: 557px;
+                margin-top: -10px;
+                height: 37px;  
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+                border-left: 8px solid rgb(70, 33, 33);
+                border-right: 8px solid rgb(70, 33, 33);
+                border-bottom: 8px solid rgb(70, 33, 33);
+
+                    .date_input, .time_input {
+                        margin-top: 3px;
+                        font-weight: bold;
+                        outline: none;
+                        background: none;
+                        border: none;
+                    }  
+
+                    .date_input {
+                        width: 154px;
+                        position: relative;
+                        left: -30px;
+                    }
+
+                    .labal_inputs {
+                        color: rgb(24, 7, 179);
+                        font-weight: bold;
+                        margin-right: 25px;
+                    }
+              }
+
+        }
+
+        .div_save_and_cancel {
+            
+            margin-top: 20px;
+
+            .button_save {
+                font-weight: bold;
+                width: 117px;
+            }
+
+            .button_cancel {
+                font-weight: bold;
+                width: 117px;
+                margin-left: 20px;
+            }
+        }
+
+        .buttons {
+            margin-top: 30px;
+            font-weight: bold;
+            width: 117px;
+        }
+
+         .eror_msg {
+            margin-top: 30px;
+
+            #eror_msg {
+            font-weight: bold;
+            font-size: 20px;
+            color: red;
+            }
+           
+        }
+
+        #arr_notes_span{
+            display: flex;
+            margin-top: 30px;
+            font-weight: bold;
+            float: left;
+            text-align: left;
+
+            #edit {
+                border: 5px solid red;
+                border-radius: 30px;
+            }
+
+                      
+            .note_bg {
+
+                background-image: url('notebg.png');
+                background-size: contain;
+                width: 200px;
+                height: 250px;
+                display: inline-block;
+                padding-left: 10px;
+                margin-left: 45px;
+                margin-top: 64px;
+
+                animation-name: slideRight;
+                -webkit-animation-name: slideRight; 
+             
+                animation-duration: 1s; 
+                -webkit-animation-duration: 1s;
+             
+                animation-timing-function: ease-in-out; 
+                -webkit-animation-timing-function: ease-in-out;     
+             
+                visibility: visible !important; 
+           
+                @keyframes slideRight {
+                    0% {transform: translateX(-150%);}      
+                    100% {transform: translateX(0%);}
+                }
+                
+                @-webkit-keyframes slideRight {
+                    0% {-webkit-transform: translateX(-150%);}  
+                    100% {-webkit-transform: translateX(0%);}
+                }
+                
+
+                    .button_rmove {
+                        float: right;
+                        margin-right: 29px;
+                        margin-top: 22px;
+                        background: none;
+                        border: none;
+                        opacity: 0;
+                    }
+
+                    .button_edit {
+                        float: right;
+                        margin-right: -4px;
+                        margin-top: 22px;
+                        background: none;
+                        border: none;
+                        opacity: 0;
+                    }
+
+                    #exp {
+                        float: right;
+                        margin-top: -32px;
+                        margin-left: 19px;
+                        color: white;
+                        position: absolute;
+                        background-color: rgb(45, 45, 235);
+                        padding-left: 5px;
+                        padding-right: 6px;
+                        border-radius: 12px;
+                     }
+
+                    .note_text {
+                        margin-top: 46px;
+                        overflow: auto;
+                        word-break: break-word;
+                        height: 135px;
+                        max-width: 157px;
+                        color: rgb(70, 33, 33);
+                    }
+            
+                    .date_text {
+                        margin-top: 5px;
+                        color: rgb(47, 144, 255);
+                    }
+            
+                    .time_text {
+                        color: rgb(230, 109, 29); 
+                    }
+
+            }
+
+            .note_bg:hover .button_rmove, .note_bg:hover .button_edit {
+                opacity: 1;
+                transition: 0.7s;
+            }
+
+           
+        }
+
+    }
+
+}
+
